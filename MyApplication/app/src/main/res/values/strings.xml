@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="form_name" >Name</string>
+    <string name="form_email" >Email</string>
+    <string name="form_password">Password</string>
+    <string name="button_submit">SAVE USER</string>
+</resources>
