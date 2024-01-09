@@ -4,3 +4,14 @@ u build.gradle(module nesto) se dodaje link:
   implementation("com.squareup.retrofit2:retrofit:2.9.0")
   implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 da vidimo koja je ipadresa: ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
+kad dodamo to idemo na klase:
+model User
+pa dodajemo Retrofit 
+RetrofitService
+UserApi
+pa onda konfigurisemo izgled viewa
+u Main klasi dodajemo odredjene funkcijw
+pa u manifest folderu dodajemo 
+    <user-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+ i ovo         android:usesCleartextTraffic="true"
