@@ -1,1 +1,2 @@
-# HCI_P
+# HCI_Pismeni
+Reseno par rokova
