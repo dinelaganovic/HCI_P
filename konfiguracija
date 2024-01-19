@@ -3,15 +3,45 @@ retrofit
 u build.gradle(module nesto) se dodaje link: 
   implementation("com.squareup.retrofit2:retrofit:2.9.0")
   implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+
+Pa sincujemo 
 da vidimo koja je ipadresa: ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
+
 kad dodamo to idemo na klase:
 model User
 pa dodajemo Retrofit 
 RetrofitService
 UserApi
+UserAdapter //za get
+
 pa onda konfigurisemo izgled viewa
 u Main klasi dodajemo odredjene funkcijw
 pa u manifest folderu dodajemo 
     <user-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
  i ovo         android:usesCleartextTraffic="true"
+
+Za listu uzimamo XML - Layout
+
+implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0”) // za crtanje grafikona
+
+Settings.gradle. its  treba da bude 
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven("https://jitpack.io")
+        google()
+        jcenter()
+    }
+}
+
+
