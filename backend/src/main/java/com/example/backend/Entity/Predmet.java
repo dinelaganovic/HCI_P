@@ -11,7 +11,6 @@ public class Predmet {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private  Long id;
     @Column(name = "name", length = 255)
-
     private  String name;
     @Column(name = "ocena", length = 255)
     private  int ocena;

@@ -1,17 +1,15 @@
 package com.example.backend.Service.impl;
 
 import com.example.backend.Dto.PredmetDTO;
-import com.example.backend.Dto.UserDTO;
 import com.example.backend.Entity.Predmet;
-import com.example.backend.Entity.User;
 import com.example.backend.Repo.PredmetRepository;
-import com.example.backend.Repo.UserRepository;
 import com.example.backend.Service.PredmetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Service
 public class PredmetIMPL implements PredmetService {
     @Autowired

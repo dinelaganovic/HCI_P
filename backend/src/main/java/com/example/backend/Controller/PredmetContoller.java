@@ -1,9 +1,7 @@
 package com.example.backend.Controller;
 
 import com.example.backend.Dto.PredmetDTO;
-import com.example.backend.Dto.UserDTO;
 import com.example.backend.Service.PredmetService;
-import com.example.backend.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +12,7 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("api/v1/predmet")
 public class PredmetContoller {
+
     @Autowired
     private PredmetService predmetService;
 
@@ -22,6 +21,7 @@ public class PredmetContoller {
         String predmet=predmetService.createPredmet(predmetDTO);
         return predmet;
     }
+
     @GetMapping(path = "/getAll")
     public ResponseEntity<?> getAllPredmets(){
         try {
@@ -31,5 +31,4 @@ public class PredmetContoller {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
-
 }
